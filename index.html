@@ -30,11 +30,7 @@
 
     <a-scene embedded arjs = "sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
       <a-marker type = "barcode" value = "0">
-        <a-entity
-          position = "2 2 2"
-          scale = "1 1 1"
-          img src = "test.png"
-        ></a-entity>
+        <a-image src="test.png"></a-image>
       </a-marker>
 
       <a-marker type = "barcode" value = "1">
