@@ -31,19 +31,9 @@
     <a-scene embedded arjs = "sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
       <a-marker type = "barcode" value = "0">
         <a-entity
-          text = "value: #user1"
-        ></a-entity>
-        <a-entity
-          position = "0 0 0"
+          position = "2 2 2"
           scale = "1 1 1"
-          geometry = "primitive: box; depth: 0.2; height: 2; width: 10"
-          material = "color: grey"
-        ></a-entity>
-        <a-entity
-          position = "0 0 0"
-          scale = "0.85 0.85 0.85"
-          geometry = "primitive: box; depth: 0.1; height: 2; width: 7"
-          material = "color: yellow"
+          img src = "test.png"
         ></a-entity>
       </a-marker>
 
