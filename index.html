@@ -7,7 +7,6 @@
     <title> EXPRESSTRICITY - DV3010 </title>
     <script src = "aframe.min.js"></script>
     <script src = "aframe-ar.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <style>
       h1 {
         font-family: monospace;
@@ -31,7 +30,7 @@
 
     <a-scene embedded arjs = "sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
       <a-marker type = "barcode" value = "0">
-        <a-image src="test.png"></a-image>
+        <a-box position='0 0.5 0' color="yellow"></a-box>
       </a-marker>
 
       <a-entity camera></a-entity>
