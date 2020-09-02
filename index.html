@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
     <meta name = "viewport" content = "width = device-width; user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0">
     <title> EXPRESSTRICITY - DV3010 </title>
-    <script src = "aframe.min.js"></script>
-    <script src = "aframe-ar.js"></script>
-    <style>
-      h1 {
-        font-family: monospace;
-        font-size: 2em;
-        color: black;
-        background-color: yellow;
-        position: absolute;
-        top: 10px;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-        z-index: 999;
-      }
-    </style>
+    <script src = "JS/aframe.min.js"></script>
+    <script src = "JS/aframe-ar.js"></script>
+    <script src = "JS/device-orientation.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "CSS/sylesheet.css">
   </head>
 
   <body style = "margin: 0px; overflow: hidden;">
@@ -28,7 +15,7 @@
       <h1> SCAN SOMEONE </h1>
     </div>
 
-    <a-scene embedded arjs = "sourceType: webcam; trackingMethod: best; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
+    <a-scene embedded arjs = "sourceType: webcam; trackingMethod: best; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; detectionMode: mono_and_matrix; matrixCodeType: 5x5;">
       <a-marker preset = "hiro">
         <a-image
           src = "energybar_test-01.png"
@@ -56,5 +43,4 @@
       </a-entity>
     </a-scene>
   </body>
-
 </html>
