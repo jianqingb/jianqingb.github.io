@@ -36,3 +36,11 @@ h3 {
   width: 100%;
   text-align: center;
   z-index: 995;
+}
+
+.deviceData {
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
