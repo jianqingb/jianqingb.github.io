@@ -6,7 +6,6 @@
     <title> EXPRESSTRICITY - DV3010 </title>
     <script src = "JS/aframe.min.js"></script>
     <script src = "JS/aframe-ar.js"></script>
-    <script src = "aframe-html-shader.min.js"></script>
     <script src = "JS/device-orientation.js"></script>
 
     <link rel = "stylesheet" type = "text/css" href = "CSS/stylesheet.css">
@@ -18,7 +17,7 @@
     </div>
 
     <a-scene embedded arjs = "sourceType: webcam; trackingMethod: best; debugUIEnabled: false; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; detectionMode: mono_and_matrix; matrixCodeType: 5x5;">
-      <a-marker type = "pattern" url = "Markers/pattern-1.patt">
+      <a-marker preset = "hiro">
         <a-image
           src = "Assets/animation.gif"
           position = "0 0 0"
@@ -26,20 +25,9 @@
           rotation = "-90 0 0"
         ></a-image>
       </a-marker>
-
-      <a-entity
-        geometry = "primitive: box"
-        material="shader: html; target: #htmlElement"
-        ></a-entity>
-
       <a-entity camera>
       </a-entity>
     </a-scene>
-
-    <div style = "width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
-      <div id = "htmlElement" style = "background: #F8F8F8; color: #333; font-size: 48px">
-        Testing
-      </div>
     </div>
   </body>
 </html>
