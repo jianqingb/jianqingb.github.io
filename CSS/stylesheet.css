@@ -47,11 +47,10 @@ h3 {
 
 .header {
   position: relative;
-  clear: left;
+  float: left;
+  clear: both;
 }
 
 .body {
   position: absolute;
-  float: left;
-  clear: both;
 }
